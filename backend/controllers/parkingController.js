@@ -15,7 +15,11 @@ const addParkingSpot = async (req, res) => {
       location,
       availability,
       price,
-      type,
+      lat,
+      lon,
+      image,
+      tslot,
+      aslot
     });
 
     const savedSpot = await newSpot.save();
